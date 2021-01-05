@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online music streaming</title>
+    <link rel="stylesheet" href="css/mstyle.css">
+    <link rel="stylesheet" href="css/lightslider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css">
+    <link rel="shorcut icon" type="image/x-icon" href="favicon.png"/>
+</head>
+<body>
+    <nav>
+        <a href="#" class="logo">
+            <img src="images/logo.png" />
+        </a>
+        <div class="search">
+            <input type="text" id="myip" placeholder="Search.." name="search">
+           <i class="fa fa-search" id="inp" onclick="searchmusic();"></i>
+        </div>
+           <div class="log">
+               <ul>
+                <!-- <li><a href="createacc.html">Sign Up</a></li> -->
+                <li><a href="index.html">Logout</a></li> 
+            </ul>   
+           </div>
+    </nav>
+    <section id="main">
+        <h1 class="showcase-heading">Showcase</h1>
+        <ul id="autoWidth" class="cs-hidden">
+            <li class="item-a">
+                <div class="showcase-box">
+                    <img src="images/s-1.jpg" />
+                </div>
+            </li>
+            <li class="item-b">
+
+                <div class="showcase-box">
+                    <img src="images/s-2.jpg" />
+                </div>
+            </li>
+            <li class="item-c">
+
+                <div class="showcase-box">
+                    <img src="images/s-3.jpg" />
+                </div>
+            </li>
+            <li class="item-d">
+
+                <div class="showcase-box">
+                    <img src="images/s-4.jpg" />
+                </div>
+            </li>
+            <li class="item-e">
+
+                <div class="showcase-box">
+                    <img src="images/s-5.jpg" />
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section id="latest">
+        <h2 class="latest-heading">LATEST HITS</h2>
+        <ul id="autoWidth2" class="cs-hidden">
+            <li class="item-a">
+                <div class="latest-box" data-switch="0">
+                    <!-- <a href="#"> -->
+                        <div class="latest-b-img">
+                            <img src="images/m-1.jpg">
+                        </div>
+                        <div class="latest-b-text">
+                            <strong>Mirchi</strong>
+                            <p>Divine</p>
+                        </div>
+                    <!-- </a> -->
+                </div>
+            </li>
+            <li class="item-b">
+                <div class="latest-box" data-switch="1">
+                    <!-- <a href="#"> -->
+                        <div class="latest-b-img">
+                            <img src="images/m-2.jpg">
+                        </div>
+
+                        <div class="latest-b-text">
+                            <strong>Liggi</strong>
+                            <p>RitViz</p>
+                        </div>
+                    <!-- </a> -->
+                </div>
+            </li>
+            <li class="item-c">
+                <div class="latest-box" data-switch="2">
+
+                    <!-- <a href="#"> -->
+                        <div class="latest-b-img">
+                            <img src="images/m-3.jpg">
+                        </div>
+                        <div class="latest-b-text">
+                            <strong>BamBholle</strong>
+                            <p>Laxmii</p>
+                        </div>
+                    <!-- </a> -->
+                </div>
+            </li>
+            <li class="item-d">
+                <div class="latest-box" data-switch="3">
+                    <!-- <a href="#"> -->
+                        <div class="latest-b-img">
+                            <img src="images/m-4.jpg">
+                        </div>
+                        <div class="latest-b-text">
+                            <strong>Bhurj Khalifa</strong>
+                            <p>Laxmii</p>
+                        </div>
+                    <!-- </a> -->
+                </div>
+            </li>
+            <li class="item-e">
+                <div class="latest-box" data-switch="4">
+                    <!-- <a href="#"> -->
+                        <div class="latest-b-img">
+                            <img src="images/m-5.jpg">
+                        </div>
+                        <div class="latest-b-text">
+                            <strong>Coca Cola</strong>
+                            <p>Luka Chuppi</p>
+                        </div>
+                    <!-- </a> -->
+                </div>
+            </li>
+            <li class="item-f">
+                <div class="latest-box" data-switch="5">
+                    <!-- <a href="#"> -->
+                        <div class="latest-b-img">
+                            <img src="images/m-6.jpg">
+                        </div>
+                        <div class="latest-b-text">
+                            <strong>Heer Ranjha</strong>
+                            <p>Bhuvan BAm</p>
+                        </div>
+                    <!-- </a> -->
+                </div>
+            </li>
+            <li class="item-g">
+                <div class="latest-box" data-switch="6">
+                    <!-- <a href="#"> -->
+                        <div class="latest-b-img">
+                            <img src="images/m-7.jpg">
+                        </div>
+                        <div class="latest-b-text">
+                            <strong>Malang</strong>
+                            <p>Malang</p>
+                        </div>
+                    <!-- </a> -->
+                </div>
+            </li>
+        </ul>
+    </section>
+    <div class="movies-heading">
+        <h2>MUSIC</h2>
+    </div>
+    <section id="movies-list">
+        <div class="movies-box" data-switch="7">
+            <!-- <a href="#"> -->
+                <div class="movies-img">
+                    <div class="quality">320kbps</div>
+                    <img src="images/l-1.jpg">
+                </div>
+                <a href="#">
+                    Batla House|DxA Musi|320kbps|2020
+                </a>
+            <!-- </a> -->
+        </div>
+        <div class="movies-box" data-switch="8">
+            <!-- <a href="#"> -->
+                <div class="movies-img">
+                    <div class="quality">320kbps</div>
+                    <img src="images/l-2.jpg">
+                </div>
+                <a href="#">
+                    Pachtaoge|DxA Music|320kbps|2020
+                </a>
+            <!-- </a> -->
+        </div>
+        <div class="movies-box" data-switch="9">
+            <!-- <a href="#"> -->
+                <div class="movies-img">
+                    <div class="quality">320kbps</div>
+                    <img src="images/l-3.jpg">
+                </div>
+                <a href="#">
+                    Psyco Sayyan|DxA Music|320kbps|2020
+                </a>
+            <!-- </a> -->
+        </div>
+        <div class="movies-box" data-switch="10">
+            <!-- <a href="#"> -->
+                <div class="movies-img">
+                    <div class="quality">320kbps</div>
+                    <img src="images/l-4.jpg">
+                </div>
+                <a href="#">
+                    Slow Motion|DxA Music|320kbps|2020
+                </a>
+            <!-- </a> -->
+        </div>
+        <div class="movies-box" data-switch="11">
+            <!-- <a href="#"> -->
+                <div class="movies-img">
+                    <div class="quality">320kbps</div>
+                    <img src="images/l-5.jpg">
+                </div>
+                <a href="#">
+                    Teri Mitti|DxA Music|320kbps|2020
+                </a>
+            <!-- </a> -->
+        </div>
+        <div class="movies-box" data-switch="12">
+            <!-- <a href="#"> -->
+                <div class="movies-img">
+                    <div class="quality">320kbps</div>
+                    <img src="images/l-6.jpg">
+                </div>
+                <a href="#">
+                    Ghungroo|DxA Music|320kbps|2020
+                </a>
+            <!-- </a> -->
+        </div>
+        <div class="movies-box" data-switch="13">
+            <!-- <a href="#"> -->
+                <div class="movies-img">
+                    <div class="quality">320kbps</div>
+                    <img src="images/l-7.jpg">
+                </div>
+                <a href="#">
+                    Makhna|DxA Music|320kbps|2020
+                </a>
+            <!-- </a> -->
+        </div>
+        <div class="movies-box" data-switch="14">
+            <!-- <a href="#"> -->
+                <div class="movies-img">
+                    <div class="quality">320kbps</div>
+                    <img src="images/l-8.jpg">
+                </div>
+                <a href="#">
+                    Tera Baap Aaya|DxA Music|320kbps|2020
+                </a>
+           <!-- </a> -->
+        </div>
+        <div id="aplayer"></div>
+    </section>
+    <footer>
+        <p>DxA Music</p>
+        <p>Copyright 2020</p>
+    </footer>
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script src="js/JQuery3.3.1.js"></script>
+    <script src="js/lightslider.js"></script>
+    <script src="js/music.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
+    <script>
+        $(".latest-box").on('click', function (e) {
+            var dataSwitchId = $(this).attr('data-switch');
+            ap.list.switch(dataSwitchId);
+            console.log(dataSwitchId);
+            ap.play();
+            console.log(ap.list);
+            console.log(ap.audio.name);
+        });
+        $(".movies-box").on('click', function (e) {
+            var dataSwitchId = $(this).attr('data-switch');
+            ap.list.switch(dataSwitchId);
+            console.log(dataSwitchId);
+            ap.play();
+            console.log(ap.audio.name);
+        });
+        const ap = new APlayer({
+            container: document.getElementById('aplayer'),
+            listFolded: true,
+            audio: [
+                {
+                    name: 'Mirchi',
+                    artist: 'Divine',
+                    url: 'music/Mirchi - DIVINE.mp3',
+                    cover: 'images/m-1.jpg'
+                },
+                {
+                    name: 'Liggi',
+                    artist: 'Ritviz',
+                    url: 'music/Liggi.mp3',
+                    cover: 'images/m-2.jpg'
+                },
+                {
+                    name: 'BamBHole',
+                    artist: 'Laxmii',
+                    url: 'music/BamBholle - Laxmii Bomb.mp3',
+                    cover: 'images/m-3.jpg'
+                },
+                {
+                    name: 'Burj Khalifa',
+                    artist: 'Laxmii',
+                    url: 'music/BurjKhalifa - Laxmmi Bomb.mp3',
+                    cover: 'images/m-4.jpg'
+                },
+                {
+                    name: 'Coca Cola',
+                    artist: 'Luka Chuppi',
+                    url: 'music/Coca Cola - Luka Chuppi.mp3',
+                    cover: 'images/m-5.jpg'
+                },
+                {
+                    name: 'Heer Ranjha',
+                    artist: 'Bhuvan Bam',
+                    url: 'music/Heer Ranjha - Bhuvan Bam.mp3',
+                    cover: 'images/m-6.jpg'
+                },
+                {
+                    name: 'Malang-Title Track',
+                    artist: 'Malang',
+                    url: 'music/Malang - Title Track.mp3',
+                    cover: 'images/m-7.jpg'
+                },
+                {
+                    name: 'O Saki Saki',
+                    artist: 'Batla House',
+                    url: 'music/O Saki Saki - Batla House.mp3',
+                    cover: 'images/l-1.jpg'
+                },
+                {
+                    name: 'Pachtaoge',
+                    artist: 'Vicky Kaushal',
+                    url: 'music/Pachtaoge - Female Version.mp3',
+                    cover: 'images/l-2.jpg'
+                },
+                {
+                    name: 'Psycho Sayyan',
+                    artist: 'Saaho',
+                    url: 'music/Psycho Saiyaan - Saaho - Hindi.mp3',
+                    cover: 'images/l-3.jpg'
+                },
+                {
+                    name: 'Slow Motion',
+                    artist: 'Bharath',
+                    url: 'music/Slow Motion - Bharat.mp3',
+                    cover: 'images/l-4.jpg'
+                },
+                {
+                    name: 'Teri Mitti',
+                    artist: 'Kesari',
+                    url: 'music/Teri Mitti - Kesari.mp3',
+                    cover: 'images/l-5.jpg'
+                },
+                {
+                    name: 'Ghungroo',
+                    artist: 'War',
+                    url: 'music/Ghungroo - War.mp3',
+                    cover: 'images/l-6.jpg'
+                },
+                {
+                    name: 'Makhna',
+                    artist: 'Drive',
+                    url: 'music/Makhna - Drive.mp3',
+                    cover: 'images/l-7.jpg'
+                },
+                {
+                    name: 'Tera Baap Aaya',
+                    artist: 'Commando 3',
+                    url: 'music/Tera Baap Aaya - Commando 3.mp3',
+                    cover: 'images/l-8.jpg'
+                }
+            ]
+        });
+    </script>
+    <script>
+        function searchmusic()
+        {
+            var search=document.getElementById('myip').value;
+            switch(search)
+            {
+                case "Liggi": ap.list.switch(1);
+                            break;
+                case "Mirchi": ap.list.switch(0);
+                                break;
+                case "BamBHole": ap.list.switch(2);
+                                break;
+                case "Burj Khalifa": ap.list.switch(3);
+                                break;
+                case "Coca Cola": ap.list.switch(4);
+                                break;
+                case "Heer Ranjha": ap.list.switch(5);
+                                break;
+                case "Malang-Title Track": ap.list.switch(6);
+                                break;
+                case "O Saki Saki": ap.list.switch(7);
+                                break;
+                case "Pachtaoge": ap.list.switch(8);
+                                break;
+                case "Psycho Sayyan": ap.list.switch(9);
+                                break;
+                case "Slow Motion": ap.list.switch(10);
+                                break;
+                case "Teri Mitti": ap.list.switch(11);
+                                break;
+                case "Ghungroo": ap.list.switch(12);
+                                break;
+                case "Makhna": ap.list.switch(13);
+                                break;
+                case "Tera Baap Aaya": ap.list.switch(14);
+                                break;
+                default:alert("No song found");
+            
+            }
+            //var hello=ap.audio.name;
+            
+        }
+    </script>
+</body>
+
+</html>
