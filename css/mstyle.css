@@ -269,10 +269,14 @@ padding: 1.5rem;
     flex-direction: column;
   }
   .logo img {
-    height: 30px;
+    height: 40px;
   }
   .search {
     width: 90%;
     height: 40px;
+    margin-left: 20px;
+  }
+  .log ul li{
+    margin-bottom: 5px;
   }
 }
