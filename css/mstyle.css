@@ -219,7 +219,7 @@ footer p {
 text-decoration: none;
 color: #fff;
 font-family: 'Poppins', sans-serif;
-padding: 1.5rem;
+padding: 0.2rem;
 }
 .search inp{
   cursor: pointer;
@@ -278,5 +278,6 @@ padding: 1.5rem;
   }
   .log ul li{
     margin-bottom: 5px;
+    padding:0.2rem;
   }
 }
