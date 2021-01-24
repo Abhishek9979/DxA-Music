@@ -39,14 +39,37 @@ for(var i=0;i<localStorage.length;i++)
     var temp=localStorage.key(i);
     if(temp==user)
     {
-        alert("username not available");
+        alert("username already taken");
         return;
     }
+}
+if(pass == user)
+{
+    alert("username and password cannot be same");
+    return;
 }
 if(pass != conpass)
 {
     alert("password does not match");
+    return;
     
+}
+if (pass.search(/[a-z]/i) < 0) {
+    alert("Your password must contain at least one letter.");
+    return;
+}
+if (pass.search(/[0-9]/) < 0) {
+    alert("Your password must contain at least one digit."); 
+    return;
+}
+if(pass.length<7)
+{
+    alert("password must contain more than 6 characters");
+    return;
+}
+if(pass.length>13)
+{
+    alert("password must contain less than 12 characters");
 }
 else{
    localStorage.setItem(user,pass);
